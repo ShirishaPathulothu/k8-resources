@@ -5,7 +5,7 @@ metadata:
  labels:
   project: expense
   module: backend
-  environment: devops
+  environment: dev
 spec:
  containers:
  - name: nginx
