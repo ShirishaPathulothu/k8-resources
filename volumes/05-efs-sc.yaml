@@ -1,0 +1,11 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: efs-dynamic-claim
+provisioner: efs.csi.aws.com
+parameters:
+  provisioningMode: efs-ap
+  fileSystemId: fs-0f6434e92c30f4a44
+  directoryPerms: "700"
+  basePath: "/expense" # optional
+  
